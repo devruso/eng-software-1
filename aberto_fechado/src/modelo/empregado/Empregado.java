@@ -5,6 +5,7 @@ public class Empregado {
 	private String sobrenome;
 	private String email;
 	private boolean gerente;
+	private boolean diretor;
 
 	public boolean isDiretor() {
 		return diretor;
@@ -13,8 +14,6 @@ public class Empregado {
 	public void setDiretor(boolean diretor) {
 		this.diretor = diretor;
 	}
-
-	private boolean diretor;
 
 	public boolean isGerente() {
 		return gerente;
