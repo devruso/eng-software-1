@@ -1,26 +1,21 @@
 package modelo.src.console;
 
-import modelo.src.modelo.CandidatoGenerico;
-import modelo.src.modelo.CriadorContas;
-import modelo.src.modelo.Empregado;
-import modelo.src.modelo.ICandidato;
+import modelo.src.modelo.*;
 
 import java.util.*;
 
 public class Programa {
-
 	public static void main(String[] args) {
 		List<ICandidato> candidatos = new ArrayList<ICandidato>();
 		candidatos.add(new CandidatoGenerico("Carlos", "Silva"));
-		candidatos.add(new CandidatoGenerico("Maria", "Souza"));
+		candidatos.add(new CandidatoGerente("Maria", "Souza"));
 		candidatos.add(new CandidatoGenerico("Ana", "Lopes"));
 
 	    List<Empregado> empregados = new ArrayList <Empregado>();
-	    CriadorContas criadorContas = new CriadorContas();
 
 	    for (ICandidato candidato : candidatos)
 	    {
-	        empregados.add(criadorContas.criar(candidato));
+	        empregados.add(candidato.obterCriadorContas().criar(candidato));
 	    }
 
 	    for (Empregado empregado: empregados)

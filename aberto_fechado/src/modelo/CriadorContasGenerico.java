@@ -1,6 +1,6 @@
 package modelo.src.modelo;
 
-public class CriadorContas {
+public class CriadorContasGenerico implements ICriadorContas {
     public Empregado criar(ICandidato candidato)
     {
         Empregado empregado = new Empregado();

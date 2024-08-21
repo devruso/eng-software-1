@@ -17,4 +17,8 @@ public class CandidatoGenerico implements ICandidato {
 	public String getSobrenome() {
 		return sobrenome;
 	}
+
+	public ICriadorContas obterCriadorContas(){
+		return new CriadorContasGenerico();
+	}
 }
