@@ -1,4 +1,7 @@
-package modelo.src.modelo;
+package modelo.src.modelo.contas;
+
+import modelo.src.modelo.empregado.Empregado;
+import modelo.src.modelo.candidato.ICandidato;
 
 public class CriadorContasGenerico implements ICriadorContas {
     public Empregado criar(ICandidato candidato)

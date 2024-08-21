@@ -1,4 +1,6 @@
-package modelo.src.modelo;
+package modelo.src.modelo.candidato;
+
+import modelo.src.modelo.contas.ICriadorContas;
 
 public interface ICandidato {
 

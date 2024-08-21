@@ -1,4 +1,4 @@
-package modelo.src.modelo;
+package modelo.src.modelo.empregado;
 
 public class Empregado {
 	private String nome;
